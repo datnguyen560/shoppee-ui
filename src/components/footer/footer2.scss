@@ -1,0 +1,83 @@
+.container12 {
+  width: 1200px;
+  height: 450px;
+  background-color: rgb(251 251 251);
+  display: flex;
+  border-bottom: 1px solid rgb(179, 166, 166);
+  //   margin: 70px 30px;
+}
+.container12_1 {
+  width: 240px;
+  height: 400px;
+  margin-left: 10px;
+  margin-top: 30px;
+  h1 {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(88 88 88);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+}
+.container12_1 a:hover {
+  color: red;
+}
+.container12_1 p:hover {
+  color: red;
+}
+.payment {
+  width: 50px;
+  height: 50px;
+}
+.container12_111 {
+  margin-top: 20px;
+}
+.container123 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  p {
+    font-size: 14px;
+    color: rgb(115 115 115);
+  }
+  a {
+    text-decoration: none;
+    color: rgb(115 115 115);
+    width: 30px;
+    padding-left: 3px;
+    margin-left: 3px;
+    border-left: 1px solid rgb(218, 202, 202);
+  }
+}
+.container1234 {
+  text-align: center;
+  margin-top: 20px;
+}
+.container1234_1 {
+  a {
+    text-decoration: none;
+    color: rgb(115 115 115);
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid rgb(218, 202, 202);
+  }
+}
+.container1234_1 a:first-child {
+  border-left: none;
+}
+
+.container1234_2 {
+  margin: 40px 0px;
+}
+.logoo {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.container1234_3 {
+  font-size: 13px;
+}
