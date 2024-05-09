@@ -91,6 +91,7 @@
   margin-left: 5px;
 }
 .signin_form {
+  position: relative;
   input {
     width: 340px;
     height: 42px;
@@ -101,6 +102,12 @@
     border: 1px solid rgb(216, 197, 197);
     color: rgb(189 189 223);
   }
+}
+.eye {
+  position: absolute;
+  top: 85px;
+  right: 40px;
+  border: none;
 }
 .signinbutton {
   width: 340px;

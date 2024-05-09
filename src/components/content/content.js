@@ -1,6 +1,7 @@
 import './conten.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 function Content() {
     return (
@@ -37,13 +38,13 @@ function Content() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                            <img src="https://cf.shopee.vn/file/vn-50009109-b6c4d5546273c01ef9c72a89856f02ca_xxhdpi" className="d-block w-100" alt="aa" />
+                                <Link to='/shoppeemall'><img src="https://cf.shopee.vn/file/vn-50009109-b6c4d5546273c01ef9c72a89856f02ca_xxhdpi" className="d-block w-100" alt="aa" /></Link>
                             </div>
                             <div className="carousel-item">
-                            <img src="https://cf.shopee.vn/file/vn-50009109-b6d8513743ad60b2617c57aa3b2a7f29_xxhdpi" className="d-block w-100" alt="bb" />
+                                <Link to='/shoppeemall'><img src="https://cf.shopee.vn/file/vn-50009109-b6d8513743ad60b2617c57aa3b2a7f29_xxhdpi" className="d-block w-100" alt="bb" /></Link>
                             </div>
                             <div className="carousel-item">
-                            <img src="https://cf.shopee.vn/file/vn-50009109-b3c16cc3a223a9d132e136023e6c8385_xxhdpi" className="d-block w-100" alt="cc" />
+                                <Link to='/shoppeemall'><img src="https://cf.shopee.vn/file/vn-50009109-b3c16cc3a223a9d132e136023e6c8385_xxhdpi" className="d-block w-100" alt="cc" /></Link>
                             </div>
                         </div>
                         <button
@@ -68,39 +69,43 @@ function Content() {
                     </div>
                     <div className='container_first_1_2'>
                         <div className='container_first_1_2_1'>
-                            <img
-                            src='https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi' 
-                            className="d-block w-100"
-                            alt="a"
-                            />
+                            <Link to='/payment'>
+                                <img
+                                src='https://cf.shopee.vn/file/vn-50009109-adecae4a1716b70953e7795b3e26729b_xhdpi' 
+                                className="d-block w-100"
+                                alt="a"
+                                />
+                            </Link>
                         </div>
                         <div className='container_first_1_2_2'>
-                            <img
-                            src='https://cf.shopee.vn/file/vn-50009109-958255fee8537927717127f3be6d4950_xhdpi' 
-                            className="d-block w-100"
-                            alt="a"
-                            />
+                           <Link to='/promotionMB'>
+                                <img
+                                src='https://cf.shopee.vn/file/vn-50009109-958255fee8537927717127f3be6d4950_xhdpi' 
+                                className="d-block w-100"
+                                alt="a"
+                                />
+                           </Link>
                         </div>
                     </div>
                 </div>
                 <div className='container_first_2'>
                     <div className='container_first_2_1'>
-                        <a href='#'>
+                        <Link to='/voucherExtra'>
                             <img src="https://cf.shopee.vn/file/vn-50009109-11d9732a464d895d3699ca40431d0bfd_xhdpi" className='container_first_2_1all' alt="aa" />
                             <span className='all'>Voucher giảm đến 1 <br/> triệu</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className='container_first_2_1'>
-                        <a href='#'>
+                        <Link to='/freeship'>
                             <img src="https://cf.shopee.vn/file/a8d76bca057ba0b117dcf8e1ef068d16_xhdpi" className='container_first_2_1all' alt="aa" />
                             <span className='all'>Miếng phí ship <br/> - có shopee</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className='container_first_2_1'>
-                        <a href='#'> 
+                        <Link to='saleoff'> 
                             <img src="https://cf.shopee.vn/file/e4a404283b3824c211c1549aedd28d5f_xhdpi" className='container_first_2_1all' alt="aa" />
                            <span className='all'> Khung giờ <br/>săn sale</span>
-                        </a>
+                        </Link>
                     </div>
                     <div className='container_first_2_1'>
                         <a href='#'>

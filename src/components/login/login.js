@@ -4,7 +4,7 @@ import Footer2 from '../footer/footer2';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import {faQuestion, faFaceAngry, faQuestionCircle} from '@fortawesome/free-solid-svg-icons'
+import {faQuestion, faFaceAngry, faQuestionCircle, faEyeSlash, faEye} from '@fortawesome/free-solid-svg-icons'
 
 
 function Login() {
@@ -13,10 +13,13 @@ function Login() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [fullName, setFullName] = useState('');
-
+  let [showPassword, setShowPassword] = useState(true)
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
+  };
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
   };
     return ( 
     <div className='login'>
@@ -50,7 +53,7 @@ function Login() {
                             <h1>Đăng nhập</h1>
                             <form onSubmit={handleSubmit} className='signin_form'>
                                 <input type='text' id='fullname' placeholder='Email/Số điện thoại/Tên đăng nhập' autoFocus/>
-                                <input type='password' id='password' placeholder='Mật khẩu'/>
+                                <input type={showPassword ? 'password' : 'text'} id='password' placeholder='Mật khẩu'/>
                                 <button className='signinbutton'>Đăng nhập</button>
                                 <div className='forgot'>
                                     <a href='#'>Quên mật khẩu</a>
@@ -76,6 +79,9 @@ function Login() {
                                     </button>
                                 </div>
                                 <p>Mới biết đến Shopee?<Link to='/signup' className='signin_a'>Đăng ký</Link></p>
+                                <button className='eye' onClick={handleShowPassword}>
+                                   {showPassword ? <FontAwesomeIcon icon={faEyeSlash} /> : <FontAwesomeIcon icon={faEye} />}
+                                </button>
                             </form>
                         </div>
                     </div>
